@@ -36,7 +36,7 @@ function OffersTab() {
             <Img ml="20px" width="52px" src={meds} />
             <Box style={textBox}>
              <Heading float="left" fontSize="22px">Order Medicine</Heading>            
-             <Text color="green">Save Upto 25% off <i className="fa fa-angle-right" aria-hidden="true" style={{marginLeft:"160px"}}></i></Text>
+             <Text color="green">Save Upto 25% off</Text>
              
             </Box>
         </Box>
@@ -44,7 +44,7 @@ function OffersTab() {
             <Img ml="20px" width="52px" src={beauty} />
              <Box style={textBox}>
              <Heading float="left" fontSize="22px">Beauty</Heading>
-             <Text color="green">Save Upto 40% off <i className="fa fa-angle-right" aria-hidden="true" style={{marginLeft:"160px"}}></i></Text>
+             <Text color="green">Save Upto 40% off</Text>
              
              </Box>
         </Box>
@@ -52,7 +52,7 @@ function OffersTab() {
             <Img ml="20px" width="52px" src={wellness} />
             <Box style={textBox}>
              <Heading float="left" fontSize="22px">Wellness</Heading>
-             <Text color="green">Save Upto 15% off <i className="fa fa-angle-right" aria-hidden="true" style={{marginLeft:"160px"}}></i></Text>
+             <Text color="green">Save Upto 15% off</Text>
             </Box>
         </Box>
      </SimpleGrid>

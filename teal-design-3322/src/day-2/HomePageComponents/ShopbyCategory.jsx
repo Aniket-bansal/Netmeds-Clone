@@ -15,13 +15,14 @@ const categories={
     // border:"1px solid red",
     height:"100%",
     backgroundColor:"#fff",
-    cursor:"pointer"
+    cursor:"pointer",
+    borderRadius:"5px"
 }
 function ShopbyCategory() {
   return (
     <Box style={mainContainer}>
      <Flex>
-     <Heading fontSize="36px" float="left" paddingLeft="10px" textAlign="left" mb="22px">Shop by Category</Heading>
+     <Heading fontSize="24px" float="left" paddingLeft="10px" textAlign="left" mb="22px">Shop by Category</Heading>
      <Spacer/>
      <Text mt="15px" cursor="pointer" color="tomato">View All<i class="fa-solid fa-chevron-right fa-xs"></i></Text>
      </Flex>

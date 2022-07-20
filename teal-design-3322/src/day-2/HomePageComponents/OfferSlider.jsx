@@ -12,7 +12,7 @@ import { Box, Heading, Img } from '@chakra-ui/react';
 function OfferSlider(){
     return (
 <Box  margin="auto" mt="140px" width="79%" height="310px" >
-    <Heading  width="20%" mb="22px">Trending Today</Heading>
+    <Heading width="40%" fontSize="24px" textAlign="left" mb="22px">Trending Today</Heading>
 <Swiper
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y,Autoplay]}

@@ -10,6 +10,9 @@ import AdCarousel from './HomePageComponents/AdCarousel';
 import OffersTab from './HomePageComponents/OffersTab';
 import OfferSlider from './HomePageComponents/OfferSlider';
 import ShopbyCategory from './HomePageComponents/ShopbyCategory';
+import NewArrivals from './HomePageComponents/NewArrivals';
+import TopBrands from './HomePageComponents/TopBrands';
+import Membership from './HomePageComponents/Membership';
 const menuItem={
   // border:"1px solid red",
   width:"100%",
@@ -139,6 +142,9 @@ function Homepage() {
     <OffersTab />
     <OfferSlider/>
     <ShopbyCategory />
+    <NewArrivals />
+    <TopBrands/>
+    <Membership/>
     </Box>
       </>
   )
