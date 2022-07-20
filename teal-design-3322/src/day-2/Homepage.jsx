@@ -13,6 +13,11 @@ import ShopbyCategory from './HomePageComponents/ShopbyCategory';
 import NewArrivals from './HomePageComponents/NewArrivals';
 import TopBrands from './HomePageComponents/TopBrands';
 import Membership from './HomePageComponents/Membership';
+import CategoriesinFocus from './HomePageComponents/CategoriesinFocus';
+import PersonalGrooming from './HomePageComponents/PersonalGrooming';
+import Refill from './HomePageComponents/Refill';
+import HealthLibrary from './HomePageComponents/HealthLibrary';
+
 const menuItem={
   // border:"1px solid red",
   width:"100%",
@@ -137,7 +142,7 @@ function Homepage() {
         </Box>
       </Grid>
     </Box>
-    <Box height="3000px">
+    <Box height="auto">
     <AdCarousel/>
     <OffersTab />
     <OfferSlider/>
@@ -145,6 +150,10 @@ function Homepage() {
     <NewArrivals />
     <TopBrands/>
     <Membership/>
+    <CategoriesinFocus/>
+    <PersonalGrooming />
+    <Refill />
+    <HealthLibrary/>
     </Box>
       </>
   )
