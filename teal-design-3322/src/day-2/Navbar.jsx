@@ -1,10 +1,6 @@
 import { Box, HStack, Img, Input, InputGroup, InputLeftAddon,Modal,
-    ModalOverlay,
     ModalContent,
-    ModalHeader,
-    ModalFooter,
     ModalBody,
-    ModalCloseButton,
     Button,
     useDisclosure,
     Heading,
@@ -20,7 +16,8 @@ const NavContainer={
    height:"100px",
    backgroundColor:"#32AEB1",
    position:"fixed",
-   color:"#fff"
+   color:"#fff",
+   zIndex:"20"
 }
 const modal={
     marginLeft:"-125px",
