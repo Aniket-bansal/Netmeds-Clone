@@ -1,0 +1,64 @@
+{
+    "brands":[
+        {
+          "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/maxi.jpg?v=14",
+          "name":"Maxi",
+          "offer":"UP TO 50%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/skin-elements.jpg?v=14",
+            "name":"Skin-Elements",
+            "offer":"UP TO 50%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dr-vaidyas.jpg?v=14",
+            "name":"Dr-Vaidyas",
+            "offer":"UP TO 20%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14",
+            "name":"Dabur",
+            "offer":"UP TO 30%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/accu-chek.jpg?v=14",
+            "name":"Accu-Check",
+            "offer":"UP TO 25%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/novaherbs.jpg?v=14",
+            "name":"Novaherbs",
+            "offer":"UP TO 20%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/origin-nutrition.jpg?v=14",
+            "name":"Origin-Nutrition",
+            "offer":"UP TO 15%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/durex.jpg?v=14",
+            "name":"Durex",
+            "offer":"UP TO 25%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dettol.jpg?v=14",
+            "name":"Dettol",
+            "offer":"UP TO 20%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/dabur.jpg?v=14",
+            "name":"Dabur",
+            "offer":"UP TO 10%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/himalaya.jpg?v=14",
+            "name":"Himalaya",
+            "offer":"UP TO 39%"
+        },
+        {
+            "src":"https://www.netmeds.com/images/cms/wysiwyg/brand/v2/msite/mamaearth.jpg?v=14",
+            "name":"Mamaearth",
+            "offer":"UP TO 30%"
+        }
+    ]
+}
