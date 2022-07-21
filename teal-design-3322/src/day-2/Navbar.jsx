@@ -6,9 +6,10 @@ import { Box, HStack, Img, Input, InputGroup, InputLeftAddon,Modal,
     Heading,
     Text, } from '@chakra-ui/react'
 
-import React from 'react'
+import React, { useContext } from 'react'
 import {FaSearchLocation} from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../day-3/AuthContext/AuthContext';
 
 
 const NavContainer={
@@ -31,7 +32,9 @@ const textStyle={
     gap:"10px"
 }
 function Navbar() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
+    const { isOpen, onOpen, onClose } = useDisclosure();
+
+    const auth = useContext(AuthContext)
   return (
     <>
     <Box style={NavContainer}>
@@ -51,9 +54,10 @@ function Navbar() {
       </Modal>
     <Input backgroundColor="#fff" height="50px" type="text" placeholder="Search for medicine & wellness products..." color="lightgrey" />
     </InputGroup>
-    <Button variant="link" color="#fff"><i class="fa-solid fa-scroll">&nbsp;</i>Upload</Button>
-    <NavLink to="/cart"><Button variant="link" color="#fff"><i class="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button></NavLink>
-    <NavLink to="/login"><Button variant="link" color="#fff"><i class="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button></NavLink>
+    <Button variant="link" color="#fff"><i className="fa-solid fa-scroll">&nbsp;</i>Upload</Button>
+    <NavLink to="/cart"><Button variant="link" color="#fff"><i className="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button></NavLink>
+    {/* Auth */}
+    {auth ? <NavLink to="/profile"><Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Guest</Button></NavLink> : <NavLink to="/login"> <Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button> </NavLink>}
     </HStack>
     </Box>
     </>
