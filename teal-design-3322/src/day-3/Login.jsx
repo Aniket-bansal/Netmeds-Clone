@@ -1,7 +1,9 @@
-import { Box, Button, Flex, Heading, HStack, Img, Input, InputGroup, InputLeftAddon, InputLeftElement, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, Button, Flex, Heading, HStack, Img, Input, InputGroup, Text } from '@chakra-ui/react'
+import React, { useContext, useState } from 'react'
 import google from './Icons/google.png'
 import facebook from './Icons/facebook.png'
+import { AuthContext } from './AuthContext/AuthContext'
+import { useNavigate } from 'react-router-dom'
 const LoginBox={
     width:"60%",
     margin:"auto",
@@ -11,6 +13,40 @@ const LoginBox={
     borderRadius:"20px"
 }
 function Login() {
+     
+   const [user,setUser] = useState({
+    email: "",
+    pass: ""
+   });
+
+   const Auth = useContext(AuthContext)
+   const navigate = useNavigate()
+   const handleChange=(e)=>{
+    const {name,value} = e.target;
+    setUser({
+      ...user,
+      [name]:value
+    });
+   }
+   function handleSubmit(e){
+    e.preventDefault();
+    fetch("https://reqres.in/api/login",{
+      method:"POST",
+      headers: {
+        "Content-Type" : "application/json"
+      },
+      body : JSON.stringify(user)
+    })
+    .then((r)=>r.json())
+    .then((r)=>{
+      alert("Success");
+      Auth.handleLogin(r.token);
+      navigate("/")
+    })
+    .catch(err=>{
+      console.log("Something went wrong!!!")
+    })
+   }
   return (
     <Box style={LoginBox}>
       <Flex>
@@ -22,16 +58,23 @@ function Login() {
          <Heading fontSize="24px" fontWeight="500" lineHeight="29px">Sign In / Sign Up</Heading>
          <Text fontSize="14px" mt="10px">Sign up or Sign in to access your orders, special offers, health tips and more!</Text>
          <br />
-         <Text fontSize="13px" color="#24AEB1" >PHONE NUMBER</Text>
-         {/* <InputLeftAddon placeholder="+91" /> */}
+         {/* Email */}
+         <Text fontSize="13px" color="#24AEB1" >Email</Text>
         <HStack>
         <InputGroup>
-        <InputLeftAddon backgroundColor="#fff" borderRight="1px solid" children='+91' />
-         <Input variant="flushed" pl="10px" type="number" placeholder="Enter your mobile no." />
+         <Input variant="flushed" pl="10px" type="text" value={user.email}  placeholder="Enter your email..."  name="email" onChange={handleChange} />
+        </InputGroup>
+        </HStack>
+        {/* Password */}
+         <Text fontSize="13px" color="#24AEB1" >Password</Text>
+        <HStack>
+        <InputGroup>
+         <Input variant="flushed" pl="10px" type="text" value={user.pass}  placeholder="Enter your password..." name="pass" onChange={handleChange} />
         </InputGroup>
         </HStack><br/><br/>
-        <Button w="100%" backgroundColor="#24AEB1" color="#ffff">USE OTP</Button>
+        <Button w="100%" backgroundColor="#24AEB1" color="#ffff" onClick={handleSubmit} >Sign In</Button>
          </Box>
+         {/* Google Facebook Icons */}
          <Box>
             <Flex w="70%" margin="auto" mt="60px" h="80px">
                 <Box  h="80px" w="50%">
