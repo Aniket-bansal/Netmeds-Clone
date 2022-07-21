@@ -8,6 +8,7 @@ import { Box, HStack, Img, Input, InputGroup, InputLeftAddon,Modal,
 
 import React from 'react'
 import {FaSearchLocation} from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
 
 const NavContainer={
@@ -35,7 +36,7 @@ function Navbar() {
     <>
     <Box style={NavContainer}>
     <HStack width="60%" margin="auto" gap="60px" mt="20px">
-    <Img src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" />
+    <NavLink to="/"><Img w="300px" src="https://www.netmeds.com/assets/gloryweb/images/home-logo-netmeds-new.svg" /></NavLink>
     <InputGroup>
     <InputLeftAddon width="170px" height="50px" cursor="pointer" fontWeight="700" backgroundColor="#fff" color="black" children="Deliver to 110094" onClick={onOpen}/>
     <Modal  isOpen={isOpen} onClose={onClose}>
@@ -51,8 +52,8 @@ function Navbar() {
     <Input backgroundColor="#fff" height="50px" type="text" placeholder="Search for medicine & wellness products..." color="lightgrey" />
     </InputGroup>
     <Button variant="link" color="#fff"><i class="fa-solid fa-scroll">&nbsp;</i>Upload</Button>
-    <Button variant="link" color="#fff"><i class="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button>
-    <Button variant="link" color="#fff"><i class="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button>
+    <NavLink to="/cart"><Button variant="link" color="#fff"><i class="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button></NavLink>
+    <NavLink to="/login"><Button variant="link" color="#fff"><i class="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button></NavLink>
     </HStack>
     </Box>
     </>

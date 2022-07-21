@@ -29,11 +29,11 @@ function Footer() {
           <Flex fontSize="14px" columns={4}>
             <Box textAlign="left" pt="10px" pl="20px" width="100%" height="462px">
             <Text fontWeight="500">COMPANY</Text><br/>
-            <NavLink to="#">About Netmeds</NavLink> <br/> <br/>
+            <NavLink to="/about">About Netmeds</NavLink> <br/> <br/>
             <NavLink to="#">Customer Speak</NavLink> <br/> <br/>
             <NavLink to="#">In the News</NavLink> <br/> <br/>
             <NavLink to="#">Career</NavLink> <br/> <br/>
-            <NavLink to="#">Terms and Conditions</NavLink> <br/> <br/>
+            <NavLink to="/terms">Terms and Conditions</NavLink> <br/> <br/>
             <NavLink to="#">Provacy Policy</NavLink> <br/> <br/>
             <NavLink to="#">Fees adn Payments Policy</NavLink> <br/> <br/>
             <NavLink to="#">Shipping nad Delivery Policy</NavLink><br /> <br/>
