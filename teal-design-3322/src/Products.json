@@ -1,0 +1,190 @@
+{
+    "mensCare":[
+        {
+           "src":"https://www.netmeds.com/images/product-v1/150x150/903020/the_man_company_beard_wax_almond_thyme_50_gm_0_0.jpg",
+           "title":"The Man Company Beard Wax - Almond & Thyme 50 gm",
+           "company":"Mkt: The Man Company",
+           "price":"Rs. 411.75 ",
+           "mrp":"Rs. 549.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/925407/ustraa_beard_wash_oil_woody_60_ml_0_1.jpg",
+            "title":"Ustraa Beard Wash Oil - Woody 60 ml",
+            "company":"Mkt: Happily Unmarried Marketing Private Limited",
+            "price":" Rs. 170.00",
+            "mrp":"Rs. 200.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/903003/the_man_company_pre_shave_oil_argan_jojoba_50_ml_0_0.jpg",
+            "title":"The Man Company Pre Shave Oil - Argan & Jojoba 50 ml",
+            "company":"Mkt: The Man Company",
+            "price":" Rs. 379.24",
+            "mrp":"Rs. 499.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/993837/thriveco_beard_growth_serum_30_ml_0_1.jpg",
+            "title":"ThriveCo Beard Growth Serum 30 ml",
+            "company":"Mkt: Thriveco.",
+            "price":" Rs. 699.30",
+            "mrp":"Rs. 999.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/907560/ustraa_beard_wash_woody_pack_of_2_x_60_ml_0_1.jpg",
+            "title":"Ustraa Beard Wash - Woody (Pack of 2 x 60 ml)",
+            "company":"Mkt: Happily Unmarried Marketing Private Limited",
+            "price":" Rs. 320.00",
+            "mrp":"Rs. 400.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/903021/the_man_company_beard_softening_cream_argan_mint_50_gm_0_0.jpg",
+            "title":"The Man Company Beard Softening Cream - Argan & Mint 50 gm",
+            "company":"Mkt: The Man Company",
+            "price":" Rs. 265.24",
+            "mrp":"Rs. 349.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/890565/the_man_company_beard_wash_for_growth_almond_thyme_100_ml_0.jpg",
+            "title":"The Man Company Beard Wash for Growth - Almond & Thyme 100 ml",
+            "company":"Mkt: The Man Company",
+            "price":" Rs. 262.50",
+            "mrp":"Rs. 350.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/903020/the_man_company_beard_wax_almond_thyme_50_gm_0_0.jpg",
+            "title":"The Man Company Beard Wax - Almond & Thyme 50 gm",
+            "company":"Mkt: The Man Company",
+            "price":" Rs. 411.75",
+            "mrp":"Rs. 549.00"
+        }
+    ],
+    "nebulizers":[
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/1028203/bpl_breathe_ezee_n8_compressor_nebulizer_1s_0_0.jpg",
+            "title":"BPL Breathe Ezee N8 Compressor Nebulizer",
+            "company":"Mkt: BPL Medical Technologies Private Limited",
+            "price":" Rs. 1,360.40",
+            "mrp":"Rs. 1,790.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/859708/omron_compressor_nebulizer_ne_c101_0.jpg",
+            "title":"Omron Compressor Nebulizer (NE-C101)",
+            "company":"Mkt: Omron Healthcare Co Ltd",
+            "price":" Rs. 1,808.80",
+            "mrp":"Rs. 2,380.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/859723/omron_compressor_nebulizer_compair_eco_ne_c302_e_0.jpg",
+            "title":"Omron Compressor Nebulizer CompAIR ECO (NE-C302-E)",
+            "company":"Mkt: Omron Healthcare Co Ltd",
+            "price":" Rs. 2,296.32",
+            "mrp":"Rs. 2,990.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/946915/bpl_breathe_ezee_n3_nebulizer_0_2.jpg",
+            "title":"BPL Breathe Ezee N3+ Nebulizer",
+            "company":"Mkt: BPL Medical Technologies Private Limited",
+            "price":" Rs. 1,950.00",
+            "mrp":"Rs. 3,000.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/974353/beurer_nebulizer_ih_21_1s_0_0.jpg",
+            "title":"Beurer Nebulizer (IH 21)",
+            "company":"Mkt: Beurer India Pvt. Ltd.",
+            "price":" Rs. 2,579.04",
+            "mrp":"Rs. 3,240.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/965318/dr_odin_portable_mesh_nebulizer_inebcare_0_0.jpg",
+            "title":"Dr. Odin Portable Mesh Nebulizer (iNebcare)",
+            "company":"Mkt: PASSIM MEDICHEM AGENCIES",
+            "price":" Rs. 2,666.00",
+            "mrp":"Rs. 3,100.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/1031373/ez_life_piston_compressor_nebulizer_ezneb_104_0_0.jpg",
+            "title":"Ez-life Piston Compressor Nebulizer (EZNEB - 104)",
+            "company":"Mkt: Otica Meditronix Co.",
+            "price":" Rs. 1,273.00",
+            "mrp":"Rs. 1,900.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/1004364/naulakha_prime_plus_compressor_nebulizer_ni_212_0_0.jpg",
+            "title":"Naulakha Prime Plus + Compressor Nebulizer (NI/212)",
+            "company":"Mkt: Naulakha Industries",
+            "price":" Rs. 1,565.13",
+            "mrp":"Rs. 1,799.00"
+        }
+    ],
+    "covid":[
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/947142/patanjali_divya_swasari_coronil_kit_0_0.jpg",
+            "title":"Patanjali Divya Swasari Coronil Kit",
+            "company":"Mkt: Patanjali Ayurved Ltd",
+            "price":"Rs. 545.00",
+            "mrp":""
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/858256/newnik_pulse_oximeter_with_audio_visual_alarm_px701_royal_blue_0_1.jpg",
+            "title":"Newnik Pulse Oximeter With Audio Visual Alarm (PX701) - Royal Blue",
+            "company":"Mkt: Newnik Lifecare Pvt Ltd",
+            "price":" Rs. 1,795.80",
+            "mrp":"Rs. 4,380.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/977198/netmeds_3_ply_face_mask_with_nose_pin_100s_0_1.jpg",
+            "title":"Netmeds 3 Ply Face Mask with Nose Pin 100's",
+            "company":"Mkt: Reliance Retail Limited",
+            "price":" Rs. 220.00",
+            "mrp":"Rs. 1,000.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/835057/dettol_antiseptic_liquid_550_ml_0_1.jpg",
+            "title":"Dettol Antiseptic Liquid 550 ml",
+            "company":"Mkt: Reckitt Benckiser India Ltd",
+            "price":"Rs. 194.60",
+            "mrp":""
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/948692/oxy5_refillable_portable_oxygen_can_6_litre_0_1.jpg",
+            "title":"Oxy5 Refillable Portable Oxygen Can 6 Litre",
+            "company":"Mkt: Handylife",
+            "price":" Rs. 416.00",
+            "mrp":"Rs. 650.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/839437/fast_up_charge_natural_vitamin_c_tablets_orange_flavour_20_s_0.jpg",
+            "title":"Fast&Up Charge Natural Vitamin C & Zinc Tablets - Orange Flavour 20's",
+            "company":"Mkt: Aeronutrix Sports Products Private Limited",
+            "price":" Rs. 312.00",
+            "mrp":"Rs. 390.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/110947/tetmosol_medicated_soap_100_gm_0_1.jpg",
+            "title":"Tetmosol Medicated Soap 100 gm",
+            "company":"Mkt: Piramal Healthcare Ltd",
+            "price":" Rs. 81.40",
+            "mrp":"Rs. 88.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/858571/inlife_multivitamins_and_minerals_for_women_capsules_60_s_0.jpg",
+            "title":"INLIFE Multivitamins and Minerals for Women Capsules 60's",
+            "company":"Mkt: Inlife Pharma Private Limited",
+            "price":" Rs. 398.43",
+            "mrp":"Rs. 699.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/938218/3m_avagard_0_5_chg_handrub_solution_500_ml_0_0.jpg",
+            "title":"3M Avagard 0.5% CHG Handrub Solution 500 ml",
+            "company":"Mkt: 3M India Ltd",
+            "price":" Rs. 285.00",
+            "mrp":"Rs. 750.00"
+        },
+        {
+            "src":"https://www.netmeds.com/images/product-v1/150x150/885336/fast_up_charge_effervesent_tablet_orange_flavour_pack_of_3_x_20_s_0.jpg",
+            "title":"Fast&Up Charge Natural Vitamin C & Zinc Effervesent Tablet",
+            "company":"Mkt: Aeronutrix Sports Products Private Limited",
+            "price":" Rs. 889.20",
+            "mrp":"Rs. 1,170.00"
+        }
+    ]
+}

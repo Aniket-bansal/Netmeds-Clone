@@ -9,6 +9,7 @@ import TermAndCondition from './day-3/TermAndCondition';
 import Login from './day-3/Login';
 import Cart from './day-3/Cart';
 import { useState } from 'react';
+import Wellness from './day-4/Wellness';
 
 function App() {
   const [toggle,setToggle] = useState(false)
@@ -21,7 +22,8 @@ function App() {
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/terms" element={<TermAndCondition/>}/>
         <Route path="/login" element={<Login setToggle={setToggle} />}/>
-        <Route path="/cart" element={<Cart />}/> 
+        <Route path="/cart" element={<Cart />}/>
+        <Route path="/wellness" element={<Wellness />}/>
       </Routes>
     <Footer />
     </div>

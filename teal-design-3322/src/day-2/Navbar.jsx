@@ -60,7 +60,7 @@ function Navbar({toggle}) {
     <NavLink to="/cart"><Button variant="link" color="#fff"><i className="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button></NavLink>
     {/* Auth */}
 
-    {toggle == true ? <NavLink to="/profile"><Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Guest</Button></NavLink> : <NavLink to="/login"> <Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button> </NavLink>}
+    {toggle === true ? <NavLink to="/profile"><Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Guest</Button></NavLink> : <NavLink to="/login"> <Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button> </NavLink>}
 
     </HStack>
     </Box>
