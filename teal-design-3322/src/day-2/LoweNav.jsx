@@ -67,10 +67,10 @@ function LoweNav() {
           </Popover>
         </Box>
 {/* Wellness */}
-        <Box style={itemBox}>
+        <NavLink to="/wellness"><Box style={itemBox}>
           <Img style={menuImg} src={wellness} />
           <Text mt="7px">Wellness</Text>
-        </Box>
+        </Box></NavLink>
 {/* Lab Test */}
         <Box style={itemBox}>
           <Img style={menuImg} src={lab} />
