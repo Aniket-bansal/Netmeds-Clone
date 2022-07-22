@@ -8,17 +8,19 @@ import LoweNav from './day-2/LoweNav';
 import TermAndCondition from './day-3/TermAndCondition';
 import Login from './day-3/Login';
 import Cart from './day-3/Cart';
+import { useState } from 'react';
 
 function App() {
+  const [toggle,setToggle] = useState(false)
   return (
     <div className="App">
-      <Navbar />
+      <Navbar toggle={toggle} />
       <LoweNav/>
       <Routes>
         <Route path="/" element={<Homepage/>}/>
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/terms" element={<TermAndCondition/>}/>
-        <Route path="/login" element={<Login />}/>
+        <Route path="/login" element={<Login setToggle={setToggle} />}/>
         <Route path="/cart" element={<Cart />}/> 
       </Routes>
     <Footer />
