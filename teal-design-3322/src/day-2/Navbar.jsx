@@ -31,10 +31,12 @@ const textStyle={
     marginTop:"12px",
     gap:"10px"
 }
-function Navbar() {
+function Navbar({toggle}) {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const auth = useContext(AuthContext)
+    console.log("auth",auth)
+    
   return (
     <>
     <Box style={NavContainer}>
@@ -57,7 +59,9 @@ function Navbar() {
     <Button variant="link" color="#fff"><i className="fa-solid fa-scroll">&nbsp;</i>Upload</Button>
     <NavLink to="/cart"><Button variant="link" color="#fff"><i className="fa-solid fa-cart-shopping">&nbsp;</i>Cart</Button></NavLink>
     {/* Auth */}
-    {auth ? <NavLink to="/profile"><Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Guest</Button></NavLink> : <NavLink to="/login"> <Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button> </NavLink>}
+
+    {toggle == true ? <NavLink to="/profile"><Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Guest</Button></NavLink> : <NavLink to="/login"> <Button variant="link" color="#fff"><i className="fa-solid fa-user"></i>&nbsp; Sign in/Sign up</Button> </NavLink>}
+
     </HStack>
     </Box>
     </>

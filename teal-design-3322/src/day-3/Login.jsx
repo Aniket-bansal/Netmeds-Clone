@@ -12,8 +12,8 @@ const LoginBox={
     backgroundColor:"#fff",
     borderRadius:"20px"
 }
-function Login() {
-     
+function Login({setToggle}) {
+  
    const [user,setUser] = useState({
     email: "",
     pass: ""
@@ -47,6 +47,9 @@ function Login() {
       console.log("Something went wrong!!!")
     })
    }
+   const handleToggle=(prev)=> {
+       setToggle((prev)=>!prev)
+   }
   return (
     <Box style={LoginBox}>
       <Flex>
@@ -69,10 +72,10 @@ function Login() {
          <Text fontSize="13px" color="#24AEB1" >Password</Text>
         <HStack>
         <InputGroup>
-         <Input variant="flushed" pl="10px" type="text" value={user.pass}  placeholder="Enter your password..." name="pass" onChange={handleChange} />
+         <Input variant="flushed" pl="10px" type="password" value={user.pass}  placeholder="Enter your password..." name="pass" onChange={handleChange} />
         </InputGroup>
         </HStack><br/><br/>
-        <Button w="100%" backgroundColor="#24AEB1" color="#ffff" onClick={handleSubmit} >Sign In</Button>
+        <Button w="100%" backgroundColor="#24AEB1" color="#ffff" onClick={handleSubmit} ><Text onClick={handleToggle}>Sign In</Text></Button>
          </Box>
          {/* Google Facebook Icons */}
          <Box>
