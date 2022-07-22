@@ -6,17 +6,17 @@ import lab from './icons/test-tube.png'
 import spray from './icons/spray.png'
 import book from './icons/book.png'
 import { NavLink } from 'react-router-dom';
-import AdCarousel from './HomePageComponents/AdCarousel';
-import OffersTab from './HomePageComponents/OffersTab';
-import OfferSlider from './HomePageComponents/OfferSlider';
-import ShopbyCategory from './HomePageComponents/ShopbyCategory';
-import NewArrivals from './HomePageComponents/NewArrivals';
-import TopBrands from './HomePageComponents/TopBrands';
-import Membership from './HomePageComponents/Membership';
-import CategoriesinFocus from './HomePageComponents/CategoriesinFocus';
-import PersonalGrooming from './HomePageComponents/PersonalGrooming';
-import Refill from './HomePageComponents/Refill';
-import HealthLibrary from './HomePageComponents/HealthLibrary';
+// import AdCarousel from './HomePageComponents/AdCarousel';
+// import OffersTab from './HomePageComponents/OffersTab';
+// import OfferSlider from './HomePageComponents/OfferSlider';
+// import ShopbyCategory from './HomePageComponents/ShopbyCategory';
+// import NewArrivals from './HomePageComponents/NewArrivals';
+// import TopBrands from './HomePageComponents/TopBrands';
+// import Membership from './HomePageComponents/Membership';
+// import CategoriesinFocus from './HomePageComponents/CategoriesinFocus';
+// import PersonalGrooming from './HomePageComponents/PersonalGrooming';
+// import Refill from './HomePageComponents/Refill';
+// import HealthLibrary from './HomePageComponents/HealthLibrary';
 
 const menuItem={
     // border:"1px solid red",

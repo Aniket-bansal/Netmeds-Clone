@@ -10,6 +10,8 @@ import Login from './day-3/Login';
 import Cart from './day-3/Cart';
 import { useState } from 'react';
 import Wellness from './day-4/Wellness';
+import Profile from './day-4/Profile';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   const [toggle,setToggle] = useState(false)
@@ -24,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login setToggle={setToggle} />}/>
         <Route path="/cart" element={<Cart />}/>
         <Route path="/wellness" element={<Wellness />}/>
+        <Route path="/profile" element={<PrivateRoute><Profile setToggle={setToggle} /></PrivateRoute>}/>
       </Routes>
     <Footer />
     </div>

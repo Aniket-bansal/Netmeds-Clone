@@ -42,10 +42,6 @@ const nebulizerConatiner={
     marginBottom:"12px",
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
 }
-const healtSection
-={
-
-}
 function Wellness() {
   return (
     <Box style={container}>
