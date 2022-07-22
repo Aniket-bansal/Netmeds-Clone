@@ -110,7 +110,7 @@ function Wellness() {
         product.mensCare.map((men)=>
         <SwiperSlide>
             <Box style={productContainer}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img  width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
@@ -138,7 +138,7 @@ function Wellness() {
         product.nebulizers.map((men)=>
         <SwiperSlide>
             <Box style={nebulizerConatiner}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img  width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
@@ -166,7 +166,7 @@ function Wellness() {
         product.covid.map((men)=>
         <SwiperSlide>
             <Box style={nebulizerConatiner}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
