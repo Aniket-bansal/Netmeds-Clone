@@ -98,7 +98,6 @@ function Wellness() {
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Men's Care</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
@@ -122,11 +121,10 @@ function Wellness() {
     }
     </Swiper>
     </Box>
-    {/* Nebuuuulizers */}
+    {/* Nebulizers */}
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Nebulizers</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
@@ -154,7 +152,6 @@ function Wellness() {
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Covid Essentials</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
