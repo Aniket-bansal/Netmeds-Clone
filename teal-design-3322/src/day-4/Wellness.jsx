@@ -42,10 +42,6 @@ const nebulizerConatiner={
     marginBottom:"12px",
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
 }
-const healtSection
-={
-
-}
 function Wellness() {
   return (
     <Box style={container}>
@@ -98,7 +94,6 @@ function Wellness() {
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Men's Care</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
@@ -110,7 +105,7 @@ function Wellness() {
         product.mensCare.map((men)=>
         <SwiperSlide>
             <Box style={productContainer}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img  width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
@@ -122,11 +117,10 @@ function Wellness() {
     }
     </Swiper>
     </Box>
-    {/* Nebuuuulizers */}
+    {/* Nebulizers */}
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Nebulizers</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
@@ -138,7 +132,7 @@ function Wellness() {
         product.nebulizers.map((men)=>
         <SwiperSlide>
             <Box style={nebulizerConatiner}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img  width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
@@ -154,7 +148,6 @@ function Wellness() {
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Covid Essentials</Heading>
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={5}
@@ -166,7 +159,7 @@ function Wellness() {
         product.covid.map((men)=>
         <SwiperSlide>
             <Box style={nebulizerConatiner}>
-                <Img border="1px solid" width="70%" ml="45px" mt="8px" src={men.src} />
+                <Img width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
                 <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>

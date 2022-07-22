@@ -39,7 +39,7 @@ function Login({setToggle}) {
     })
     .then((r)=>r.json())
     .then((r)=>{
-      alert("Success");
+      // alert("Success");
       Auth.handleLogin(r.token);
       navigate("/")
     })
@@ -47,7 +47,7 @@ function Login({setToggle}) {
       console.log("Something went wrong!!!")
     })
    }
-   const handleToggle=(prev)=> {
+   const handleToggle=()=> {
        setToggle((prev)=>!prev)
    }
   return (
