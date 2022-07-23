@@ -73,7 +73,7 @@ function HealthLibrary() {
             </Box>
         </Box>
         {/* Summary */}
-        <Box w="90%" margin="auto" mt="50px" h="1350px">
+        <Box w="90%" margin="auto" mt="50px" overflow={"hidden"} h="1350px">
          <Text textAlign="left">
          <strong>Popular Wellness Products: </strong>Dabur Shilajit Gold Capsule 20's | Dabur Chyawanprash Awaleha 500 gm | Pankajakasthuri Breathe Easy Granules 400 gm | Nestle Peptamen Peptide Based Diet Powder - Vanilla Flavour 400 gm (Tin) | Pentasure 2.0 Vanilla Powder 1 kg | Scalpe Plus Anti Dandruff Shampoo 75 ml | Nestle Nan Excella Pro 1 (Upto 6 Months) Powder 400 gm (Refill Pack) | Accu-Chek Active Test Strips 50's | D Protin Chocolate Powder 500 gm | Climax Spray for Men 12 gm <br/>
          <strong>Top-Selling Health Packages:</strong> AAROGYAM C | Netmed Health Pack | Aarogyam 1.3 | Netmeds Swasthya | Diabetic Checkup | Aarogyam 1.7 |          Basic Allergy Package | Aarogyam X | Advance Heart Care | Netmeds Swasthya Plus <br/>
