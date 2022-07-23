@@ -1,5 +1,6 @@
 import { Box, Button, Heading, Img, Text } from '@chakra-ui/react'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const Container={
@@ -10,6 +11,7 @@ const Container={
     backgroundColor:"#ffffff"
 }
 function Cart() {
+  
   return (
     <Box style={Container}>
       <Heading textAlign="left" pl="10px" pt="10px" fontSize="29px">My Cart</Heading>
@@ -18,7 +20,7 @@ function Cart() {
        <Text fontWeight={"500"}>Your Cart is empty!</Text>
        <Text fontSize="14px">You have no items added in the cart.<br/>
 Explore and add products you like!</Text><br/>
-          <Button backgroundColor="#24AEB1" color="#fff" w="200px">ADD PRODUCTS</Button>
+          <NavLink to="/wellness"><Button backgroundColor="#24AEB1" color="#fff" w="200px">ADD PRODUCTS</Button></NavLink>
       </Box>
     </Box>
   )
