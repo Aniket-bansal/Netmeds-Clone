@@ -15,6 +15,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Checkout from './day-5/Checkout';
 import Placed from './day-5/Placed';
 import LabTest from './day-5/LabTest';
+import Error from './day-5/Error';
 
 function App() {
   const [toggle,setToggle] = useState(false)
@@ -33,6 +34,7 @@ function App() {
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/placed" element={<Placed />}/>
         <Route path="/health-packages" element={<LabTest/>}/>
+        <Route path="/*" element={<Error />}/>
       </Routes>
     <Footer />
     </div>
