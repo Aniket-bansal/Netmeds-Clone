@@ -12,6 +12,9 @@ import { useState } from 'react';
 import Wellness from './day-4/Wellness';
 import Profile from './day-4/Profile';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
+import Checkout from './day-5/Checkout';
+import Placed from './day-5/Placed';
+import LabTest from './day-5/LabTest';
 
 function App() {
   const [toggle,setToggle] = useState(false)
@@ -24,9 +27,12 @@ function App() {
         <Route path="/about" element={<AboutUs/>}/>
         <Route path="/terms" element={<TermAndCondition/>}/>
         <Route path="/login" element={<Login setToggle={setToggle} />}/>
-        <Route path="/cart" element={<Cart />}/>
+        <Route path="/cart" element={<PrivateRoute><Cart /></PrivateRoute>}/>
         <Route path="/wellness" element={<Wellness />}/>
         <Route path="/profile" element={<PrivateRoute><Profile setToggle={setToggle} /></PrivateRoute>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/placed" element={<Placed />}/>
+        <Route path="/health-packages" element={<LabTest/>}/>
       </Routes>
     <Footer />
     </div>

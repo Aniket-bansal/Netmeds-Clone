@@ -72,10 +72,12 @@ function LoweNav() {
           <Text mt="7px">Wellness</Text>
         </Box></NavLink>
 {/* Lab Test */}
+        <NavLink to="/health-packages">
         <Box style={itemBox}>
           <Img style={menuImg} src={lab} />
           <Text mt="7px">Lab Tests</Text>
         </Box>
+        </NavLink>
           {/* Beauty */}
              
           <Box style={itemBox}>
