@@ -1,0 +1,17 @@
+[
+    {
+        "name":"Ram Kumar",
+        "city": "Mumbai",
+        "Description":"This is the best lab test experience ever! And that too at a very reasonable rate! I highly recommend Netmeds Swasthya package. Value for money!"
+    },
+    {
+        "name":"Ranjith Singh",
+        "city": "New Delhi",
+        "Description":"If you want a full body health report that won't cost a bomb but give accurate results, try Netmeds Swasthya Plus! Thyrocare Labs and Netmeds have done a great job on this one!"
+    },
+    {
+        "name":"Veena Nair",
+        "city": "Chennai",
+        "Description":"I've done lab tests before. The process seemed so off-putting. But with Netmeds it has been so easy and professional! The phlebotomist took great care when drawing the blood etc. He was very reassuring!"
+    }
+]
