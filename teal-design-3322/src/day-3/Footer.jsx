@@ -7,6 +7,8 @@ const footerContainer={
   height:"650px",
   width:"100%",
   backgroundColor:"#FFF",
+  marginTop:"100px",
+  aspectRatio:"1"
 }
 function Footer() {
   return (
@@ -85,7 +87,7 @@ function Footer() {
 
         {/* Bottom */}
         <Box fontSize="14px" lineHeight=" 64px" h="80px" w="80%" margin="auto" >
-          <Flex gap="270px">
+          <Flex  textAlign="center" justifyContent="space-evenly">
             <Text>Medicine</Text>
             <Text>Wellness</Text>
             <Text>Lab Test</Text>
