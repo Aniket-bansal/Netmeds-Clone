@@ -43,6 +43,7 @@ const nebulizerConatiner={
     boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"
 }
 function Wellness() {
+   
   return (
     <Box style={container}>
          <Swiper
@@ -67,29 +68,30 @@ function Wellness() {
      <Box mt="15px">
         <Flex gap="20px" h="330px">
            <Box style={categories}>
-              <Img w="100%" h="70%" src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" />
+              <Img w="80%" h="70%" ml="35px" mt="12px" src="https://www.netmeds.com/images/category/3055/thumb/covid_essentials_1.jpg" />
               <Text fontWeight="500" mt="12px">Covid Essentials</Text>
            </Box>
            <Box style={categories}>
-           <Img w="100%" h="70%" src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_2.jpg" />
+           <Img w="80%" h="70%" ml="35px" mt="12px" src="https://www.netmeds.com/images/category/v1/3251/thumb/sexual_wellness_2.jpg" />
               <Text fontWeight="500" mt="12px">Sexual Wellness</Text>
            </Box>
            <Box style={categories}>
-           <Img w="100%" h="70%" src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_1.jpg" />
+           <Img w="80%" h="70%" ml="35px" mt="12px" src="https://www.netmeds.com/images/category/3222/thumb/vitamins_and_supplements_1.jpg" />
               <Text fontWeight="500" mt="12px">Vitamins And Supplements</Text>
            </Box>
            <Box style={categories}>
-           <Img w="100%" h="70%" src="https://www.netmeds.com/images/category/491/thumb/homeopathy_1.jpg" />
+           <Img w="80%" h="70%" ml="35px" mt="12px" src="https://www.netmeds.com/images/category/491/thumb/homeopathy_1.jpg" />
               <Text fontWeight="500" mt="12px">Homeopathy</Text>
            </Box>
            <Box style={categories}>
-           <Img w="100%" h="70%" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg" />
+           <Img w="80%" h="70%" ml="35px" mt="12px" src="https://www.netmeds.com/images/category/482/thumb/ayurvedic_1.jpg" />
               <Text fontWeight="500" mt="12px">Ayurvedic</Text>
            </Box>
         </Flex>
      </Box>
         
     </Box>
+
     {/* Best in Men's care */}
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Men's Care</Heading>
@@ -104,7 +106,7 @@ function Wellness() {
     {
         product.mensCare.map((men)=>
         <SwiperSlide>
-            <Box style={productContainer}>
+            <Box style={productContainer} >
                 <Img  width="70%" ml="45px" mt="8px" src={men.src} />
                 <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
                 <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
@@ -117,6 +119,7 @@ function Wellness() {
     }
     </Swiper>
     </Box>
+
     {/* Nebulizers */}
     <Box mt="40px" h="auto" backgroundColor="#fff" borderRadius="12px">
     <Heading fontSize="22px" textAlign='left' pl="8px">Best in Nebulizers</Heading>
@@ -129,14 +132,14 @@ function Wellness() {
       onSlideChange={() => console.log('slide change')}
     >
     {
-        product.nebulizers.map((men)=>
+        product.nebulizers.map((neb)=>
         <SwiperSlide>
-            <Box style={nebulizerConatiner}>
-                <Img  width="70%" ml="45px" mt="8px" src={men.src} />
-                <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
-                <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
-                <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
-                <Flex>MRP &nbsp;<Text textDecoration="line-through">{men.mrp}</Text></Flex>
+            <Box style={nebulizerConatiner} key={Math.random()}>
+                <Img  width="70%" ml="45px" mt="8px" src={neb.src} />
+                <Text fontWeight="500" fontSize="14px" mt="4px">{neb.title}</Text>
+                <Text color="grey" fontSize="13px" mt="4px">{neb.company}</Text>
+                <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{neb.price}</Text></Flex>
+                <Flex>MRP &nbsp;<Text textDecoration="line-through">{neb.mrp}</Text></Flex>
                 <Button backgroundColor="#32AEB1" color="#ffff" w="100%">ADD TO CART</Button>
             </Box>
         </SwiperSlide>
@@ -156,14 +159,14 @@ function Wellness() {
       onSlideChange={() => console.log('slide change')}
     >
     {
-        product.covid.map((men)=>
+        product.covid.map((covid)=>
         <SwiperSlide>
-            <Box style={nebulizerConatiner}>
-                <Img width="70%" ml="45px" mt="8px" src={men.src} />
-                <Text fontWeight="500" fontSize="14px" mt="4px">{men.title}</Text>
-                <Text color="grey" fontSize="13px" mt="4px">{men.company}</Text>
-                <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{men.price}</Text></Flex>
-                <Flex>MRP &nbsp;<Text textDecoration="line-through">{men.mrp}</Text></Flex>
+            <Box style={nebulizerConatiner} key={Math.random()}>
+                <Img width="70%" ml="45px" mt="8px" src={covid.src} />
+                <Text fontWeight="500" fontSize="14px" mt="4px">{covid.title}</Text>
+                <Text color="grey" fontSize="13px" mt="4px">{covid.company}</Text>
+                <Flex mt="4px">Best price* <Text color="red" fontWeight="500">{covid.price}</Text></Flex>
+                <Flex>MRP &nbsp;<Text textDecoration="line-through">{covid.mrp}</Text></Flex>
                 <Button backgroundColor="#32AEB1" color="#ffff" w="100%">ADD TO CART</Button>
             </Box>
         </SwiperSlide>

@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Img, SimpleGrid, Spacer, Text } from '@chakra-ui/react'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const mainContainer={
     width:"80%",
@@ -16,7 +17,7 @@ function PersonalGrooming() {
   return (
     <Box style={mainContainer}>
         <Box h="350px" mb="30px">
-        <Flex><Heading fontSize="22px">Personal Care</Heading><Spacer /><Text color="#EE4280" fontWeight="600">View All </Text></Flex>
+        <Flex><Heading fontSize="22px">Personal Care</Heading><Spacer /><NavLink to="/wellness"><Text color="#EE4280" fontWeight="600">View All </Text></NavLink></Flex>
         <Box  mt="20px" h="87%">
          <SimpleGrid columns={5} gap="20px">
             <Box style={product}>
@@ -44,7 +45,7 @@ function PersonalGrooming() {
         </Box>
 
         <Box mb="100px" h="300px">
-        <Flex><Heading fontSize="22px">Men's Grooming</Heading><Spacer /><Text color="#EE4280" fontWeight="600">View All </Text></Flex>
+        <Flex><Heading fontSize="22px">Men's Grooming</Heading><Spacer /><NavLink to="/wellness"><Text color="#EE4280" fontWeight="600">View All </Text></NavLink></Flex>
         <Box  mt="20px" h="87%">
          <SimpleGrid columns={5} gap="20px">
             <Box style={product}>
