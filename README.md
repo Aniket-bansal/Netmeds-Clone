@@ -12,3 +12,5 @@
 Live Project Link --> https://awesome-netmeds-clone.netlify.app/    <br/><br/>
 <h1>Screen Shots:</h1>
 <img src="https://raw.githubusercontent.com/Aniket-bansal/Netmeds-Clone/main/Screenshot%20from%202022-08-18%2012-34-11.png" />
+
+<p>[email:eve.holt@reqres.in] &nbsp; [pass:cityslicka]</p>
