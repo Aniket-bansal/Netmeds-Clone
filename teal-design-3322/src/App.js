@@ -16,6 +16,7 @@ import Checkout from './day-5/Checkout';
 import Placed from './day-5/Placed';
 import LabTest from './day-5/LabTest';
 import Error from './day-5/Error';
+import Signup from './day-3/Signup';
 
 function App() {
   const [toggle,setToggle] = useState(false)
@@ -33,6 +34,7 @@ function App() {
         <Route path="/profile" element={<PrivateRoute><Profile setToggle={setToggle} /></PrivateRoute>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/placed" element={<Placed />}/>
+        <Route path="/signup" element={<Signup/>}/>
         <Route path="/health-packages" element={<LabTest/>}/>
         <Route path="/*" element={<Error />}/>
       </Routes>

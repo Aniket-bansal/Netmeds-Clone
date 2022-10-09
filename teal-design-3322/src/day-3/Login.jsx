@@ -1,9 +1,9 @@
 import { Box, Button, Flex, Heading, HStack, Img, Input, InputGroup, Text } from '@chakra-ui/react'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import google from './Icons/google.png'
 import facebook from './Icons/facebook.png'
 import { AuthContext } from './AuthContext/AuthContext'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 const LoginBox={
     width:"60%",
     margin:"auto",
@@ -16,7 +16,7 @@ function Login({setToggle}) {
   
    const [user,setUser] = useState({
     email: "",
-    pass: ""
+    password: ""
    });
 
    const Auth = useContext(AuthContext)
@@ -28,9 +28,10 @@ function Login({setToggle}) {
       [name]:value
     });
    }
+   
    function handleSubmit(e){
     e.preventDefault();
-    fetch("https://reqres.in/api/login",{
+    fetch("http://localhost:8080/user/login",{
       method:"POST",
       headers: {
         "Content-Type" : "application/json"
@@ -39,7 +40,7 @@ function Login({setToggle}) {
     })
     .then((r)=>r.json())
     .then((r)=>{
-      // alert("Success");
+      localStorage.setItem("login_token",r.token)
       Auth.handleLogin(r.token);
       setToggle(true)
       navigate("/")
@@ -57,7 +58,7 @@ function Login({setToggle}) {
         </Box>
         <Box w="50%" h="600px">
          <Box textAlign="left" w="70%" margin="auto" mt="80px">
-         <Heading fontSize="24px" fontWeight="500" lineHeight="29px">Sign In / Sign Up</Heading>
+         <Heading fontSize="24px" fontWeight="500" lineHeight="29px">LogIn</Heading>
          <Text fontSize="14px" mt="10px">Sign up or Sign in to access your orders, special offers, health tips and more!</Text>
          <br />
          {/* Email */}
@@ -75,6 +76,7 @@ function Login({setToggle}) {
         </InputGroup>
         </HStack><br/><br/>
         <Button w="100%" backgroundColor="#24AEB1" color="#ffff" onClick={handleSubmit} ><Text>Sign In</Text></Button>
+        <Text>New to NetMeds? <NavLink to="/signup">Signup</NavLink></Text>
          </Box>
          {/* Google Facebook Icons */}
          <Box>

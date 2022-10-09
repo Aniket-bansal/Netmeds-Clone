@@ -28,7 +28,9 @@ function Profile({setToggle}) {
     const handleClick=()=>{
         auth.handleLogout()
         setToggle(false)
+        localStorage.clear()
         navigate("/login")
+
     }
   return (
     <Box style={container}>
